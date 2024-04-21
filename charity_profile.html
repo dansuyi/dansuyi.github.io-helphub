@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styless.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - Charity Profile</title>
+    <script src="charity_profile.js"></script>
+</head>
+<body>
+    <header>
+        <img src="help.png" alt="HelpHub Logo" height="50%" width="50%">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities</a></li>
+                <li><a href="charity_profile.html">Volunteer Signup</a></li>
+                <li><a href="charitysignup.html">Charity Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Input your information and we will get back to you with ways you can assist</h2>
+
+
+        <div>
+            <p class="charity-details">Additional details...</p>
+        </div>
+        <button id="volunteer-button">Volunteer Now</button>
+        <div id="contact-form" style="display: none;">
+            <h2>Contact Information</h2>
+            <form action="volunteer_signup.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

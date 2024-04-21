@@ -1,0 +1,49 @@
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styless.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub - Charity Registration</title>
+    <!-- Add any additional CSS or meta tags here -->
+</head>
+<body>
+    <header>
+        <img src="help.png" alt="HelpHub Logo"
+        height="50%"
+        weight="50%">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="charities.html">Charities</a></li>
+                <li><a href="charity_profile.html">Volunteer Signup</a></li>
+                <li><a href="charitysignup.html">Charity Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Charity Registration</h1>
+        <p>Charities can use the form below to register with HelpHub.</p>
+        <form action="charity_registration_submit.php" method="post">
+            <label for="name">Charity Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website">
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    <footer>
+        <ul>
+
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </footer>
+</body>
+</html>
